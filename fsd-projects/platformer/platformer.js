@@ -36,17 +36,33 @@ $(function () {
     toggleGrid();
 
     // TODO 2 - Create Platforms
-    //function createPlatform(Xpos, Ypos, Width, Height, "Color")
-    //function createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
-    createPlatform(100, 700, 100, 10, "red")
-    createPlatform(200, 600, 100, 10, "orange")
-    createPlatform(300, 500, 100, 10, "yellow")
-    createPlatform(400, 400, 100, 10, "green")
-    createPlatform(500, 300, 100, 10, "blue")
+    //createPlatform(Xpos, Ypos, Width, Height, "Color")
+    //createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
+    createPlatform(60, 650, 20, 2, "red")
+    createPlatform(140, 525, 20, 2, "red")
+    createPlatform(240, 650, 20, 2, "red")
+    createPlatform(240, 400, 20, 2, "red")
+    createPlatform(540, 550, 20, 2, "red")
+    createPlatform(640, 700, 20, 2, "red")
+    createPlatform(740, 575, 20, 2, "red")
+    createPlatform(1040, 500, 20, 2, "red")
+    createPlatform(1340, 450, 20, 2, "red")
+
 
     // TODO 3 - Create Collectables
+    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber, minX, maxX, speed)
+    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber)
+    //createCollectable("Name", xPos, yPos)
+
+    createCollectable("database", 1200, 170, 0.5, 1);
+
 
     // TODO 4 - Create Cannons
+    //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight, minCannonPos, maxCannonPos, cannonSpeed)
+    //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight)
+    //createCannon("top bottom left right", position, timeBetweenShots)  
+    createCannon("left", 200, 5000)  
+    createCannon("left", 675, 200)  
 
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
