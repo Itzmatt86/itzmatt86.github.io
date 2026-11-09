@@ -33,11 +33,10 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
+    // toggleGrid();
+
 
     // TODO 2 - Create Platforms
-    //createPlatform(Xpos, Ypos, Width, Height, "Color")
-    //createPlatform(Xpos, Ypos, Width, Height, "Color", minX, maxX, speedX, minY, maxY, speedY)
     createPlatform(60, 650, 20, 2, "red")
     createPlatform(140, 525, 20, 2, "red")
     createPlatform(240, 650, 20, 2, "red")
@@ -48,20 +47,14 @@ $(function () {
     createPlatform(1040, 500, 20, 2, "red")
     createPlatform(1340, 450, 20, 2, "red")
 
-
     // TODO 3 - Create Collectables
-    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber, minX, maxX, speed)
-    //createCollectable("Name", xPos, yPos, GravitNumber, BounceNumber)
-    //createCollectable("Name", xPos, yPos)
-
     createCollectable("database", 1200, 170, 0.5, 1);
-
+    createCollectable("database", 530, 170, 0.5, 1);
+    createCollectable("database", 730, 170, 0.5, 1);
 
     // TODO 4 - Create Cannons
-    //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight, minCannonPos, maxCannonPos, cannonSpeed)
-    //createCannon("top bottom left right", position, timeBetweenShots, BulletWidth, BulletHeight)
-    //createCannon("top bottom left right", position, timeBetweenShots)  
     createCannon("left", 200, 5000)  
+    createCannon("left", 400, 5000)  
     createCannon("left", 675, 200)  
 
     //////////////////////////////////
